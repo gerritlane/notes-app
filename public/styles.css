@@ -2,20 +2,24 @@
   --color-page-bg: #a8d4ff;
 	--color-header-bg: #fffab5;
 	--color-header-text: #3c3c31;
-	--color-footer-bg: #967AA1;
-	--color-footer-text: white;
+	--color-footer-bg: #fffab5;
+	--color-footer-text: #3c3c31;
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 html {
 	background-color: var(--color-page-bg);
 	font-family: 'Roboto', sans-serif;
+}
+
+.outer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	height: 90vh;
-	margin: 0;
+	height: 100vh;
+
 }
 
 .header {
@@ -27,18 +31,21 @@ html {
 	margin-top: -8px;
 	padding: 1rem 1rem 1rem 5rem;
 	width: 100vw;
-	box-shadow: 1px 1px 5px 5px black;
+	box-shadow: 1px 1px 5px 2px black;
 }
 
 .footer {
-	margin: 1rem;
+	margin-top: auto;
+	padding: 1rem;
 	font-family: 'Fuzzy Bubbles', 'Roboto', sans-serif;
 	color: var(--color-footer-text);
 	background-color: var(--color-footer-bg);
 	text-align: center;
+	width: 100vw;
+	box-shadow: -1px -1px 5px 2px black;
 }
 
 .footer a {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Fuzzy Bubbles', 'Roboto', sans-serif;
 	color: var(--color-footer-text);
 }
