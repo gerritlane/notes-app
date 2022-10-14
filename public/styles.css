@@ -1,14 +1,14 @@
 :root {
-  --color-light-blue: #6998AB;
-	--color-dark-green: #57CC99;
-	--color-dark-blue: #22577A;
-	--color-teal: #38A3A5;
-	--color-off-white: #e1ecfe;
+  --color-page-bg: #a8d4ff;
+	--color-header-bg: #fffab5;
+	--color-header-text: #3c3c31;
+	--color-footer-bg: #967AA1;
+	--color-footer-text: white;
 	overflow-x: hidden;
 }
 
 html {
-	background-color: var(--color-light-blue);
+	background-color: var(--color-page-bg);
 	font-family: 'Roboto', sans-serif;
 	display: flex;
 	flex-direction: column;
@@ -19,25 +19,26 @@ html {
 }
 
 .header {
-	font-family: 'Roboto', serif;
+	font-family: 'Fuzzy Bubbles', 'Roboto', serif;
 	color: white;
 	font-size: min(4rem,10vw);
-	color: var(--color-off-white);
-	background-color: var(--color-dark-blue);
+	color: var(--color-header-text);
+	background-color: var(--color-header-bg);
 	margin-top: -8px;
 	padding: 1rem 1rem 1rem 5rem;
 	width: 100vw;
-	box-shadow: 1px 1px 2px 2px black;
+	box-shadow: 1px 1px 5px 5px black;
 }
 
 .footer {
 	margin: 1rem;
-	font-family: 'Roboto', sans-serif;
-	color: var(--color-light-blue);
+	font-family: 'Fuzzy Bubbles', 'Roboto', sans-serif;
+	color: var(--color-footer-text);
+	background-color: var(--color-footer-bg);
 	text-align: center;
 }
 
 .footer a {
 	font-family: 'Roboto', sans-serif;
-	color: var(--color-light-blue);
+	color: var(--color-footer-text);
 }
