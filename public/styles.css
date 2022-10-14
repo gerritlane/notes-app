@@ -2,6 +2,8 @@
   --color-page-bg: #a8d4ff;
 	--color-header-bg: #fffab5;
 	--color-header-text: #3c3c31;
+	--color-note-bg: #fffab5;
+	--color-note-text: #3c3c31;
 	--color-footer-bg: #fffab5;
 	--color-footer-text: #3c3c31;
 	overflow-x: hidden;
@@ -32,6 +34,32 @@ html {
 	padding: 1rem 1rem 1rem 5rem;
 	width: 100vw;
 	box-shadow: 1px 1px 5px 2px black;
+}
+
+.note__container	{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	width: 100vw;
+}
+
+.note	{
+	font-family: 'Fuzzy Bubbles', 'Roboto', serif;
+	color: var(--color-note-text);
+	background-color: var(--color-note-bg);
+	box-shadow: 1px 1px 4px 1px black;
+	border-radius: .5rem;
+	padding: 1rem;
+	margin: 2rem;
+}
+
+.note__title {
+	font-weight: bold;
+}
+
+.note__text	{
+	margin-top: 1rem;
 }
 
 .footer {
