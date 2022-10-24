@@ -4,10 +4,11 @@
 	--color-header-text: #3c3c31;
 	--color-note-bg: #fffab5;
 	--color-note-text: #3c3c31;
+	--color-note-add-bg: #af7630;
 	--color-footer-bg: #fffab5;
 	--color-footer-text: #3c3c31;
 	overflow-x: hidden;
-	overflow-y: hidden;
+	overflow-y: scroll;
 }
 
 html {
@@ -53,6 +54,8 @@ html {
 	padding: 1rem;
 	margin: 2rem;
 	max-width: 15rem;
+	display: flex;
+	flex-direction: column;
 }
 
 .note__title {
@@ -63,8 +66,34 @@ html {
 	margin-top: 1rem;
 }
 
+.note__addButton	{
+	width: fit-content;
+	aspect-ratio: 1/1;
+	align-self: flex-end;
+	margin: 0 0 -40px 0;
+	border-radius: 50%;
+	font-family: 'Roboto';
+	border-style: none;
+	box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.3);
+	background-color: var(--color-note-add-bg);
+	color: white;
+}
+
+.note__deleteButton	{
+	width: fit-content;
+	align-self: flex-end;
+	margin: 0 0 -10px 0;
+	font-family: 'Roboto';
+	font-weight: bold;
+	border-style: none;
+	cursor: pointer;
+	color: var(--color-note-add-bg);
+	background-color: var(--color-note-bg);
+}
+
 .footer {
 	margin-top: auto;
+	margin-bottom: -10px;
 	padding: 1rem;
 	font-family: 'Fuzzy Bubbles', 'Roboto', sans-serif;
 	color: var(--color-footer-text);

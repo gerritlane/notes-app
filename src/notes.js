@@ -23,7 +23,23 @@ const notes = [
 		key: 5,
 		title: 'Cat',
 		noteText: 'Pookie is the best!'
-	}
+	},
+	{
+		key: 6,
+		title: 'Cat',
+		noteText: 'Pookie is the best!'
+	},
+	{
+		key: 7,
+		title: 'Cat',
+		noteText: 'Pookie is the best!'
+	},
+	{
+		key: 8,
+		title: 'Cat',
+		noteText: 'Pookie is the best!'
+	},
+
 ]
 
 export default notes;
