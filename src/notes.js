@@ -34,11 +34,6 @@ const notes = [
 		title: 'Cat',
 		noteText: 'Pookie is the best!'
 	},
-	{
-		key: 8,
-		title: 'Cat',
-		noteText: 'Pookie is the best!'
-	},
 
 ]
 
